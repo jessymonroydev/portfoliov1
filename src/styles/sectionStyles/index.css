@@ -1,0 +1,442 @@
+.Index {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.containerIndexLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4287F5;
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+@media (min-width: 1200px) {
+    .imageIndexLight {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: 35vh;
+        right:-27vw;
+        border: 2px solid black;
+        border-radius: 10%;
+    }
+
+    .containerIndexDark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 65vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .h1IndexLight {
+        color: #FFC436;
+        font-size: 5em;
+        -webkit-text-stroke: 3px black;
+        cursor: pointer;
+        width: 50vw;
+    }
+
+    .h1IndexDark {
+        color: #FFC436;
+        font-size: 5em;
+        -webkit-text-stroke: 3px black;
+        cursor: pointer;
+        width: 50vw;
+    }
+
+    .h1IndexDark:hover {
+        -webkit-text-stroke: 3px #FFC436;
+    }
+
+    .h1IndexLight:hover {
+        -webkit-text-stroke: 3px #FFC436;
+    }
+    
+    .textIndexDark {
+        color: white;
+        font-size: 1.8em;
+        width: 50vw;
+        text-align: justify;
+    }
+
+    .textIndexLight {
+        color: #000000;
+        font-size: 1.8em;
+        width: 50vw;
+        text-align: justify;
+    }
+
+    .IndexImg {
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        top: 47vh;
+        left: 59vw;
+    }
+
+    .indexPull {
+        border: 2px solid #FFC436;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        border-radius: 100%;
+    }
+
+    .driveContainer {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .drive1 {
+        position: absolute;
+        top: 10vh;
+        left: 25vw;
+        width: 250px;
+        height: 140px;
+    }
+
+    .drivePart1 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drivePart2 {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drivePart3 {
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 110px;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drive2 {
+        position: absolute;
+        top: 10vh;
+        left: 70vw;
+        width: 250px;
+        height: 140px;
+    }
+
+    .drivePart4 {
+        width: 60px;
+        height: 50px;       
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+
+    .drivePart5 {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+
+    .drivePart6 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 110px;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .imageIndexLight {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: 35vh;
+        right:-27vw;
+        border: 2px solid black;
+        border-radius: 10%;
+    }
+    .containerIndexDark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 65vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .h1IndexLight {
+        color: #FFC436;
+        font-size: 4.5em;
+        -webkit-text-stroke: 3px #000000;
+        cursor: pointer;
+        width: 50vw;
+    }
+
+    .h1IndexDark {
+        color: #FFC436;
+        font-size: 4.5em;
+        -webkit-text-stroke: 2px black;
+        cursor: pointer;
+        width: 50vw;
+    }
+
+    .h1IndexDark:hover {
+        -webkit-text-stroke: 3px #FFC436;
+    }
+
+    .h1IndexLight:hover {
+        -webkit-text-stroke: 2px #FFC436;
+    }
+    
+    .textIndexDark {
+        color: white;
+        font-size: 1.8em;
+        width: 50vw;
+        text-align: justify;
+    }
+
+    .textIndexLight {
+        color: black;
+        font-size: 1.8em;
+        width: 50vw;
+        text-align: justify;
+    }
+
+    .IndexImg {
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        top: 47vh;
+        left: 59vw;
+    }
+
+    .indexPull {
+        border: 2px solid #FFC436;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        border-radius: 100%;
+    }
+
+    .driveContainer {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .drive1 {
+        position: absolute;
+        top: 10vh;
+        left: 25vw;
+        width: 250px;
+        height: 140px;
+    }
+
+    .drivePart1 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drivePart2 {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drivePart3 {
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 110px;
+        border: 2px solid #FFF0CE;
+        border-radius: 100%;
+    }
+
+    .drive2 {
+        position: absolute;
+        top: 10vh;
+        left: 70vw;
+        width: 250px;
+        height: 140px;
+    }
+
+    .drivePart4 {
+        width: 60px;
+        height: 50px;       
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+
+    .drivePart5 {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+
+    .drivePart6 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 110px;
+        border: 2px solid #0C356A;
+        border-radius: 100%;
+    }
+}
+  
+@media (max-width: 1000px) {
+    .imageIndexLight {
+        width: 30vw;
+        height: auto;
+        display: none;
+        bottom: 20px;
+        right: auto;
+    }
+
+    .containerIndexDark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .containerIndexLight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4287F5;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .IndexImg {
+        display:none
+    }
+
+    .h1IndexLight {
+        color: #FFC436;
+        font-size: 3.5em;
+        -webkit-text-stroke: 3px #000000;
+        cursor: pointer;
+        width: 85vw;
+    }
+
+    .h1IndexDark {
+        color: #FFC436;
+        font-size: 3.5em;
+        -webkit-text-stroke: 2px black;
+        cursor: pointer;
+        width: 85vw;
+    }
+
+    .h1IndexDark:hover {
+        -webkit-text-stroke: 3px #FFC436;
+    }
+
+    .h1IndexLight:hover {
+        -webkit-text-stroke: 2px #FFC436;
+    }
+
+    .textIndexLight {
+        color: black;
+        font-size: 1.8em;
+        width: 85vw;
+        text-align: justify;
+    }
+
+    .textIndexDark {
+        color: white;
+        font-size: 1.8em;
+        width: 85vw;
+        text-align: justify;
+    }
+}
+  
+@media (max-width: 576px) {
+    
+}
+
+@keyframes decoration {
+    0% {
+        top: 20px;
+        left: 20px;
+    }
+    50% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 20px;
+        left: 20px;
+    }
+}

@@ -1,0 +1,319 @@
+.mainModalMenuSummer.closeMenu {
+    transform: translateX(100%);
+    animation: slideOut 0.5s forwards;
+}
+
+@media (min-width: 1200px) {  
+    .mainModalMenuSummer {
+        position: fixed;
+        width: 300px;
+        height: 500px;
+        top: 12vh;
+        right: 3vw;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .decorationContainer {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .menuDecorationDark {
+        z-index: 10;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuDecorationLight {
+        z-index: 10;
+        background-color: #8db8fd;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuNavDark {
+        width: 300px;
+        height: 500px;
+        background-color: #29272a;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+
+    .menuNavLight {
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border: 3px solid #8db8fd;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+}
+  
+@media (max-width: 1199px) {
+    .mainModalMenuSummer {
+        position: fixed;
+        width: 300px;
+        height: 500px;
+        top: 12vh;
+        right: 3vw;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .decorationContainer {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .menuDecorationDark {
+        z-index: 10;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuDecorationLight {
+        z-index: 10;
+        background-color: #8db8fd;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuNavDark {
+        width: 300px;
+        height: 500px;
+        background-color: #29272a;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+
+    .menuNavLight {
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border: 2px solid #8db8fd;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+}
+  
+@media (max-width: 991px) {
+    .mainModalMenuSummer {
+        position: fixed;
+        width: 300px;
+        height: 500px;
+        top: 12vh;
+        right: 3vw;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .decorationContainer {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .menuDecorationDark {
+        z-index: 10;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuDecorationLight {
+        z-index: 10;
+        background-color: #8db8fd;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .menuNavDark {
+        width: 300px;
+        height: 500px;
+        background-color: #29272a;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+
+    .menuNavLight {
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border: 2px solid #8db8fd;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+    }
+}
+  
+@media (max-width: 800px) {
+    .mainModalMenuSummer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: white;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .decorationContainer {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .menuNavDark {
+        width: 100vw;
+        height: 100vh;
+        background-color: #29272a;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuNavLight {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        border: 2px solid #8db8fd;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        display: flex;
+        justify-content: center;
+    }
+}
+  
+@media (max-width: 576px) {
+    .mainModalMenuSummer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #8db8fd;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .mainModalMenuWinter {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #8db8fd;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+    }
+    
+    .mainModalMenuAutumn {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #8db8fd;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+    }
+    
+    .mainModalMenuSpring {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: #8db8fd;
+        z-index: 20;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards;
+    } 
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+}

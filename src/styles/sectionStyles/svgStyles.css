@@ -1,0 +1,103 @@
+@media (min-width: 1200px) {
+    .SvgDark {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .SvgLight {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .hearth {
+        animation: hearthAnimated 2s ease-out infinite;
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    .SvgDark {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .SvgLight {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .hearth {
+        animation: hearthAnimated 2s ease-out infinite;
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .SvgDark {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .SvgLight {
+        width: 30vw;
+        height: auto;
+        position: absolute;
+        top: auto;
+        right: 5vw;
+    }
+    
+    .hearth {
+        animation: hearthAnimated 2s ease-out infinite;
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .SvgDark {
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        bottom: 1vh;
+        right: auto;
+    }
+    
+    .SvgLight {
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        bottom: 1vh;
+        right: auto;
+    }
+    
+    .hearth {
+        animation: hearthAnimated 2s ease-out infinite;
+        transform-origin: center;
+    }
+}
+
+@keyframes hearthAnimated {
+    0% {
+        transform: scale(0.8) rotate(10deg);
+    }
+    50% {
+        transform: scale(0.8) rotate(-10deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(10deg);
+    }
+}

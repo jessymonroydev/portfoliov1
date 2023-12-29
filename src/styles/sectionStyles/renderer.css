@@ -1,0 +1,564 @@
+.Renderer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .RendererContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10vh;
+    }
+    
+    .buttonLight {
+        width: 240px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .buttonDark {
+        width: 240px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .RendererNavLight {
+        border: 2px solid black;
+        width: 220px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+    
+    .RendererNavDark {
+        border: 2px solid white;
+        width: 220px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #29272a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        color: white;
+        text-align: center;
+    }
+    
+    .RendererNavLight:hover, .RendererNavDark:hover{
+        transform: translate(10px, 10px);
+    }
+
+    .RendererNavLight:focus, .RendererNavDark:focus {
+        animation-name: focusAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes focusAnimation {
+        0% {
+            top: 10px;
+            left: 10px;
+        }
+        50% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+    
+    .boxLight {
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        background-color: #8db8fd;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .boxDark {
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        background-color: white;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .renderContainerLight {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .renderContainerDark {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+    
+}
+
+@media (max-width: 1199px) {
+    .RendererContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10vh;
+    }
+    
+    .buttonLight {
+        width: 240px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .buttonDark {
+        width: 240px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .RendererNavLight {
+        border: 2px solid black;
+        width: 220px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+    
+    .RendererNavDark {
+        border: 2px solid white;
+        width: 220px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #29272a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        color: white;
+        text-align: center;
+    }
+    
+    .RendererNavLight:hover, .RendererNavDark:hover{
+        transform: translate(10px, 10px);
+    }
+    
+    .boxLight {
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        background-color: #8db8fd;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .boxDark {
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        background-color: white;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .renderContainerLight {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .renderContainerDark {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .RendererNavLight:focus, .RendererNavDark:focus {
+        animation-name: focusAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes focusAnimation {
+        0% {
+            top: 10px;
+            left: 10px;
+        }
+        50% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .RendererContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10vh;
+    }
+    
+    .buttonLight {
+        width: 180px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .buttonDark {
+        width: 180px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .RendererNavLight {
+        border: 2px solid black;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+    
+    .RendererNavDark {
+        border: 2px solid white;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #29272a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        color: white;
+        text-align: center;
+    }
+    
+    .RendererNavLight:hover, .RendererNavDark:hover{
+        transform: translate(10px, 10px);
+    }
+    
+    .boxLight {
+        position: absolute;
+        width: 170px;
+        height: 50px;
+        background-color: #8db8fd;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .boxDark {
+        position: absolute;
+        width: 170px;
+        height: 50px;
+        background-color: white;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .renderContainerLight {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .renderContainerDark {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .RendererNavLight:focus, .RendererNavDark:focus {
+        animation-name: focusAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes focusAnimation {
+        0% {
+            top: 10px;
+            left: 10px;
+        }
+        50% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .RendererContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10vh;
+    }
+    
+    .buttonLight {
+        width: 150px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .buttonDark {
+        width: 150px;
+        height: 70px;
+        position: relative;
+    }
+    
+    .RendererNavLight {
+        border: 2px solid black;
+        width: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    .RendererNavDark {
+        border: 2px solid white;
+        width: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #29272a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    .RendererNavLight:hover, .RendererNavDark:hover{
+        transform: translate(10px, 10px);
+    }
+    
+    .boxLight {
+        position: absolute;
+        width: 120px;
+        height: 50px;
+        background-color: #8db8fd;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .boxDark {
+        position: absolute;
+        width: 120px;
+        height: 50px;
+        background-color: white;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .renderContainerLight {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .renderContainerDark {
+        width: 90vw;
+        height: 80vh;
+        position: absolute;
+        left: 5vw;
+        top: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+    }
+
+    .RendererNavLight:focus, .RendererNavDark:focus {
+        animation-name: focusAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes focusAnimation {
+        0% {
+            top: 10px;
+            left: 10px;
+        }
+        50% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .buttonLight {
+        width: 100px;
+        height: 50px;
+        position: relative;
+    }
+    
+    .buttonDark {
+        width: 100px;
+        height: 50px;
+        position: relative;
+    }
+    
+    .RendererNavLight {
+        border: 2px solid black;
+        width: 90px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        font-size: 0.6em;
+        text-align: center;
+    }
+    
+    .RendererNavDark {
+        border: 2px solid white;
+        width: 90px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #29272a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.3s;
+        color: white;
+        font-size: 0.6em;
+        text-align: center;
+    }
+    
+    .RendererNavLight:hover, .RendererNavDark:hover{
+        transform: translate(10px, 10px);
+    }
+    
+    .boxLight {
+        position: absolute;
+        width: 90px;
+        height: 40px;
+        background-color: #8db8fd;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+    
+    .boxDark {
+        position: absolute;
+        width: 90px;
+        height: 40px;
+        background-color: white;
+        top: 10px;
+        left: 10px;
+        z-index: 0;
+    }
+}

@@ -1,0 +1,79 @@
+.thenEmail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.mainThenEmail {
+    width: 300px;
+    height: 100px;
+    background-color: #FFF0CE;
+    display: flex;
+    flex-direction: column;
+    animation-name: thenEmailAnimated;
+    animation-duration: 0.5s;
+    animation-timing-function: initial;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 3;
+}
+
+@keyframes thenEmailAnimated {
+    0% {
+        width: 1px;
+        height: 1px;
+        font-size: 1px;
+    }
+    100% {
+        width: 300px;
+        height: 100px;
+    }
+}
+
+.buttonCloseThenEmail {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    display: flex;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #0C356A;
+    cursor: pointer;
+}
+
+.buttonCloseThenEmail:hover {
+    color: #0174BE;
+}
+
+.checkCorrect {
+    color: #A2C579;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+}
+
+.checkError {
+    color: #CE5A67;
+    width: 90px;
+    height: 90px;
+}
+
+.bold {
+    font-weight: bold;
+}

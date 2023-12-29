@@ -1,0 +1,1401 @@
+:root {
+    --color-input: snow;
+    --font-size-input: 1.43em;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+.Contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.contactRedirectLight:hover {
+    color: white;
+}
+
+.contactRedirectDark:hover {
+    color: #FFC436;
+}
+
+@media (min-width: 1200px) {  
+    .h1ColorLight {
+        color: #FFC436;
+        font-size: 3em;
+    }
+    
+    .h1ColorDark {
+        color: #FFC436;
+        font-size: 3em;
+        z-index: 2;
+    }
+
+    .messageContactLight {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid #FFC436;
+        color: #FFC436;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 5vh;
+      }
+      
+      .messageContactLight::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #FFC436;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactLight:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactLight:hover {
+        color: #29272a;
+      }
+    
+      .messageContactDark {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 5vh;
+      }
+      
+      .messageContactDark::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactDark:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactDark:hover {
+        color: #29272a;
+      }
+
+    .formDirectionLight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .formDirectionDark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .FoundLight {
+        width: 70vw;
+        height: 80vh;
+        position: absolute;
+        top: 8vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FoundDark {
+        width: 70vw;
+        height: 80vh;
+        position: absolute;
+        top: 8vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerFormContact {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nameContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
+    .messageTextDark:focus, .messageTextLight:focus {
+        outline: none;
+    }
+
+    .nameContactLight::placeholder, .nameContactDark::placeholder, .emailContactDark::placeholder, .emailContactLight::placeholder,
+    .messageTextDark::placeholder, .messageTextLight::placeholder {
+        color: white;
+    }
+
+    .emailContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .emailContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .lineContact {
+        width: 80vw;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 75px;
+    }
+
+    .rx7 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .specialColumn {
+        margin-right: 6vw;
+    }
+
+    .messageTextLight {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .messageTextDark {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .containerMessage {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .socialMediaLight {
+        font-size: 3em;
+        height: 7vh;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .socialMediaDark {
+        font-size: 3em;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .telegramLight {
+        border: 1px solid #FFC436;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFC436;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .telegramDark {
+        border: 1px solid white;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .gottaLight {
+        font-size: 1.2em;
+        color: #FFF0CE;
+        width: 400px;
+        text-align: center;
+    }
+
+    .gottaDark {
+        font-size: 1.2em;
+        color: white;
+        width: 400px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .copyLight {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyDark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyp {
+        font-size: 1.5em;
+    }
+}
+  
+@media (max-width: 1199px) {
+    .h1ColorLight {
+        color: #FFC436;
+        margin-top: 6vw;
+        font-size: 3em;
+    }
+    
+    /* #29272a */
+    
+    .h1ColorDark {
+        color: #FFC436;
+        margin-top: 6vw;
+        font-size: 3em;
+        z-index: 2;
+    }
+    
+    .messageContactLight {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid #FFC436;
+        color: #FFC436;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 5vh;
+      }
+      
+      .messageContactLight::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #FFC436;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactLight:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactLight:hover {
+        color: #29272a;
+      }
+    
+      .messageContactDark {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 5vh;
+      }
+      
+      .messageContactDark::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactDark:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactDark:hover {
+        color: #29272a;
+      }
+
+    .formDirectionLight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .formDirectionDark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .FoundLight {
+        width: 70vw;
+        height: 80vh;
+        position: absolute;
+        top: 8vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FoundDark {
+        width: 70vw;
+        height: 76vh;
+        position: absolute;
+        top: 12vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerFormContact {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nameContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
+    .messageTextDark:focus, .messageTextLight:focus {
+        outline: none;
+    }
+
+    .nameContactLight::placeholder, .nameContactDark::placeholder, .emailContactDark::placeholder, .emailContactLight::placeholder,
+    .messageTextDark::placeholder, .messageTextLight::placeholder {
+        color: white;
+    }
+
+    .emailContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .emailContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 20vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .lineContact {
+        width: 80vw;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 75px;
+    }
+
+    .rx7 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .specialColumn {
+        margin-right: 6vw;
+    }
+
+    .messageTextLight {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .messageTextDark {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .containerMessage {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .socialMediaLight {
+        font-size: 3em;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .socialMediaDark {
+        font-size: 3em;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .telegramLight {
+        border: 2px solid #FFC436;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFC436;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .telegramDark {
+        border: 2px solid white;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .gottaLight {
+        font-size: 1.2em;
+        color: #FFF0CE;
+        width: 400px;
+        text-align: center;
+    }
+
+    .gottaDark {
+        font-size: 1.2em;
+        color: white;
+        width: 400px;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .copyLight {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyDark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyp {
+        font-size: 1.5em;
+    }
+}
+  
+@media (max-width: 991px) {
+    .h1ColorLight {
+        color: #FFC436;
+        margin-top: 6vw;
+        font-size: 3em;
+    }
+    
+    .h1ColorDark {
+        color: #FFC436;
+        margin-top: 6vw;
+        font-size: 3em;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .messageContactLight {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid #FFC436;
+        color: #FFC436;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 10px;
+      }
+      
+      .messageContactLight::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #FFC436;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactLight:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactLight:hover {
+        color: #29272a;
+      }
+    
+      .messageContactDark {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 10px;
+      }
+      
+      .messageContactDark::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactDark:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactDark:hover {
+        color: #29272a;
+      }
+
+    .formDirectionLight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .formDirectionDark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .FoundLight {
+        width: 70vw;
+        height: 80vh;
+        position: absolute;
+        top: 8vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FoundDark {
+        width: 70vw;
+        height: 76vh;
+        position: absolute;
+        top: 12vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerFormContact {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nameContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
+    .messageTextDark:focus, .messageTextLight:focus {
+        outline: none;
+    }
+
+    .nameContactLight::placeholder, .nameContactDark::placeholder, .emailContactDark::placeholder, .emailContactLight::placeholder,
+    .messageTextDark::placeholder, .messageTextLight::placeholder {
+        color: white;
+    }
+
+    .emailContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .emailContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .lineContact {
+        width: 80vw;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 75px;
+    }
+
+    .rx7 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .specialColumn {
+        margin-right: 0vw;
+    }
+
+    .messageTextLight {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .messageTextDark {
+        resize: none;
+        overflow: auto;
+        height: 12vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 46vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .containerMessage {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .socialMediaLight {
+        font-size: 3em;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .socialMediaDark {
+        font-size: 3em;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .telegramLight {
+        border: 2px solid #FFC436;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFC436;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .telegramDark {
+        border: 2px solid white;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .gottaLight {
+        font-size: 1.2em;
+        color: #FFF0CE;
+        width: 400px;
+        text-align: center;
+    }
+
+    .gottaDark {
+        font-size: 1.2em;
+        color: white;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .copyLight {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyDark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyp {
+        font-size: 1.5em;
+    }
+}
+  
+@media (max-width: 800px) {
+    .h1ColorLight {
+        color: #FFC436;
+        font-size: 40px;
+        width: 100vw;
+        text-align: center;
+    }
+    
+    .h1ColorDark {
+        color: #FFC436;
+        font-size: 40px;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .messageContactLight {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid #FFC436;
+        color: #FFC436;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 10px;
+      }
+      
+      .messageContactLight::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #FFC436;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactLight:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactLight:hover {
+        color: #29272a;
+      }
+    
+      .messageContactDark {
+        font-family: 'Niconne', cursive;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; 
+        margin-top: 10px;
+      }
+      
+      .messageContactDark::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: transform 0.6s;
+        z-index: -1; 
+      }
+      
+      .messageContactDark:hover::after {
+        transform: translate(100%, 0);
+      }
+
+      .messageContactDark:hover {
+        color: #29272a;
+      }
+
+    .formDirectionLight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .formDirectionDark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFC436;
+        margin-top: 30px;
+        z-index: 2;
+    }
+
+    .FoundLight {
+        width: 70vw;
+        height: 80vh;
+        position: absolute;
+        top: 8vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .FoundDark {
+        width: 90vw;
+        height: 76vh;
+        position: absolute;
+        top: 12vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerFormContact {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nameContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
+    .messageTextDark:focus, .messageTextLight:focus {
+        outline: none;
+    }
+
+    .nameContactLight::placeholder, .nameContactDark::placeholder, .emailContactDark::placeholder, .emailContactLight::placeholder,
+    .messageTextDark::placeholder, .messageTextLight::placeholder {
+        color: white;
+    }
+
+    .emailContactLight {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .emailContactDark {
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .lineContact {
+        width: 80vw;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 75px;
+    }
+
+    .rx7 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .specialColumn {
+        margin-right: 0vw;
+    }
+
+    .messageTextLight {
+        resize: none;
+        overflow: auto;
+        height: 8vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .messageTextDark {
+        resize: none;
+        overflow: auto;
+        height: 8vh;
+        background-color: #29272a;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        width: 70vw;
+        font-size: var(--font-size-input);
+        color: var(--color-input);
+        font-family: 'Niconne', cursive;;
+    }
+
+    .containerMessage {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .socialMediaLight {
+        font-size: 2em;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .socialMediaDark {
+        font-size: 2em;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .telegramLight {
+        border: 2px solid #FFC436;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFC436;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .telegramDark {
+        border: 2px solid white;
+        font-size: 1em;
+        width: 0.8em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #29272a;
+        border-radius: 4px;
+    }
+
+    .gottaLight {
+        font-size: 1.2em;
+        color: #FFF0CE;
+        width: 98%;
+        text-align: center;
+    }
+
+    .gottaDark {
+        font-size: 1.2em;
+        color: white;
+        width: 98%;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .copyLight {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFC436;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyDark {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyp {
+        font-size: 1.5em;
+    }
+}

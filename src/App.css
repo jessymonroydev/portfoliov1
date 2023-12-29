@@ -1,0 +1,363 @@
+body {
+  font-family: 'Niconne', cursive;
+}
+body.light::-webkit-scrollbar-track {
+  background: #4287F5;
+}
+
+body.light::-webkit-scrollbar {
+  width: 18px;
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: #29272a;
+}
+
+body.dark::-webkit-scrollbar {
+  width: 18px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #FFC436;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #ffd165;
+}
+
+.logoSvg {
+  font-size: 3em;
+  cursor: pointer;
+  font-family: 'Single Day', cursive;
+  cursor: pointer;
+  color: #FFC436;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.languageClick {
+  cursor: pointer;
+}
+
+.languageSpain {
+  background-color: #fac204;
+  width: 54px;
+  height: 34px;
+  position: relative;
+}
+
+.redDecorationOne {
+  background-color: #c70a1e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 8px;
+}
+
+.flagUnited {
+  width: 54px;
+  height: 34px;
+}
+
+.redDecorationTwo {
+  background-color: #c70a1e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 54px;
+  height: 8px;
+}
+
+.globalLeft {
+  position: absolute;
+  top: auto;
+  right: 0;
+  margin-right: 2px;
+}
+
+.globalRight {
+  position: absolute;
+  top: auto;
+  left: 0;
+  margin-left: 2px;
+}
+
+.enLanguage {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  position: absolute;
+  top: auto;
+  left: 0;
+}
+
+.esLanguage {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  position: absolute;
+  top: auto;
+  right: 0;
+}
+
+.globalTextLight {
+  color: #FFC436;
+}
+
+.globalTextDark {
+  color: white;
+}
+
+.MainFunFacherito {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20PX;
+}
+
+.contactMenuRedirectLight:hover {
+  color: #FFC436;
+}
+
+.contactMenuRedirectDark:hover {
+  color: #6C63FF;
+}
+
+.FunFacherito {
+  width: 150px;
+  height: auto;
+}
+
+.MenuSun {
+  width: 150px;
+  height: auto;
+}
+
+.FunFacheritoContainer {
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.tempPageSun {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  border: 3px solid #FFC436;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #003fa5;
+
+}
+
+.tempPageMoon {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #040033;
+}
+
+.tempButtonSun {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tempButtonMoon {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.languagePage {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #4287F5;
+}
+
+.languageButton {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.menuRight {
+  position: fixed;
+  top: 0;
+  right: 30px;
+  display: flex;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 10vh;
+  align-items: center;
+}
+
+.menuLeft {
+  position: fixed;
+  top: 0;
+  left: 10px;
+}
+
+.lenguajeSelect {
+  position: relative;
+  display: block;
+}
+
+.logoContainer {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 8vh;
+  z-index: 9999;
+}
+
+.logoSvg:hover {
+  animation-name: logoSvg;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.logoSvg:active {
+  animation-name: logoSvg;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes logoSvg {
+  0% {width: auto; height: 5.3vh; transform: rotate(20deg);}
+  25% {width: auto; height: 5.6vh; transform: rotate(-20deg);}
+  50% {width: auto; height: 5.8vh; transform: rotate(20deg);}
+  75% {width: auto; height: 6vh; transform: rotate(-20deg);}
+  100% {width: auto; height: 5vh; transform: rotate(20deg);}
+}
+
+/* #4c3a69 */
+
+.IndexDark {
+  background-color: #29272a;
+}
+
+.IndexLight {
+  background-color: #4287F5;
+}
+
+.RendererLight {
+  background-color: white;
+}
+
+.RendererDark {
+  background-color: #29272a;
+}
+
+.ExamplesLight {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ExamplesDark {
+  background-color: #29272a;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ContactLight {
+  background-color: #29272a;
+}
+
+.ContactDark {
+  background-color: #29272a;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.lineLight {
+  fill: none;
+  stroke: #FFC436;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lineDark {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
