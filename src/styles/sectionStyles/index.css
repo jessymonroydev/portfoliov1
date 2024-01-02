@@ -47,7 +47,6 @@
     .h1IndexLight {
         color: #FFC436;
         font-size: 5em;
-        -webkit-text-stroke: 3px black;
         cursor: pointer;
         width: 50vw;
     }
@@ -55,7 +54,6 @@
     .h1IndexDark {
         color: #FFC436;
         font-size: 5em;
-        -webkit-text-stroke: 3px black;
         cursor: pointer;
         width: 50vw;
     }
@@ -209,7 +207,6 @@
     .h1IndexLight {
         color: #FFC436;
         font-size: 4.5em;
-        -webkit-text-stroke: 3px #000000;
         cursor: pointer;
         width: 50vw;
     }
@@ -217,7 +214,6 @@
     .h1IndexDark {
         color: #FFC436;
         font-size: 4.5em;
-        -webkit-text-stroke: 2px black;
         cursor: pointer;
         width: 50vw;
     }
@@ -386,7 +382,6 @@
     .h1IndexLight {
         color: #FFC436;
         font-size: 3.5em;
-        -webkit-text-stroke: 3px #000000;
         cursor: pointer;
         width: 85vw;
     }
@@ -394,7 +389,100 @@
     .h1IndexDark {
         color: #FFC436;
         font-size: 3.5em;
-        -webkit-text-stroke: 2px black;
+        cursor: pointer;
+        width: 85vw;
+    }
+
+    .h1IndexDark:hover {
+        -webkit-text-stroke: 3px #FFC436;
+    }
+
+    .h1IndexLight:hover {
+        -webkit-text-stroke: 2px #FFC436;
+    }
+
+    .textIndexLight {
+        color: black;
+        font-size: 1.8em;
+        width: 85vw;
+        text-align: justify;
+    }
+
+    .textIndexDark {
+        color: white;
+        font-size: 1.8em;
+        width: 85vw;
+        text-align: justify;
+    }
+}
+  
+@media (max-width: 576px) {
+    
+}
+
+@keyframes decoration {
+    0% {
+        top: 20px;
+        left: 20px;
+    }
+    50% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imageIndexLight {
+        width: 30vw;
+        height: auto;
+        display: none;
+        bottom: 20px;
+        right: auto;
+    }
+
+    .containerIndexDark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .containerIndexLight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #4287F5;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .IndexImg {
+        display:none
+    }
+
+    .h1IndexLight {
+        color: #FFC436;
+        font-size: 2em;
+        cursor: pointer;
+        width: 85vw;
+    }
+
+    .h1IndexDark {
+        color: #FFC436;
+        font-size: 2em;
         cursor: pointer;
         width: 85vw;
     }

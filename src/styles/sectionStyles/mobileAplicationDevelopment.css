@@ -240,7 +240,7 @@
     }
 
     .MAImgLight {
-        width: 40vw;
+        width: 53vw;
         height: auto;
         position: absolute;
         right: auto;
@@ -249,7 +249,7 @@
     }
 
     .MAImgDark {
-        width: 40vw;
+        width: 53vw;
         height: auto;
         position: absolute;
         right: auto;
@@ -357,7 +357,7 @@
     }
 
     .MAImgLight {
-        width: 60vw;
+        width: 80vw;
         height: auto;
         position: absolute;
         right: auto;
@@ -366,7 +366,7 @@
     }
 
     .MAImgDark {
-        width: 60vw;
+        width: 80vw;
         height: auto;
         position: absolute;
         right: auto;

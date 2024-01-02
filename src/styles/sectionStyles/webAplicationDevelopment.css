@@ -12,7 +12,7 @@
     }
 
     .WAImgLight {
-        width: 25vw;
+        width: 35vw;
         height: auto;
         position: absolute;
         right: 8vw;
@@ -20,7 +20,7 @@
     }
 
     .WAImgDark {
-        width: 25vw;
+        width: 35vw;
         height: auto;
         position: absolute;
         right: 8vw;
@@ -242,7 +242,7 @@
     }
 
     .WAImgLight {
-        width: 35vw;
+        width: 40vw;
         height: auto;
         position: absolute;
         bottom: 1vw;
@@ -251,7 +251,146 @@
     }
 
     .WAImgDark {
-        width: 35vw;
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        bottom: 1vw;
+        right: auto;
+        animation: slideBottom 0.6s ease-out;
+    }
+
+    .WebAplicationLight {
+        position: absolute;
+        top: 8vh;
+        border: 2px solid black;
+        padding: 10px;
+        width: 80vw;
+        border-radius: 15px;
+        animation: slideTop 0.6s ease-out;
+    }
+
+    .WebAplicationDark {
+        position: absolute;
+        top: 8vh;
+        border: 2px solid white;
+        padding: 10px;
+        width: 80vw;
+        border-radius: 15px;
+        animation: slideTop 0.6s ease-out;
+    }
+
+    .titleWebAplicationLight {
+        font-size: 2em;
+        color: #4287F5;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .titleWebAplicationDark {
+        font-size: 2em;
+        color: #FFC436;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .titleWebAplicationLight::after {
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: #FFC436;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s;
+        z-index: -1;
+    }
+    
+    .titleWebAplicationLight:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .titleWebAplicationDark::after {
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s;
+        z-index: -1;
+    }
+    
+    .titleWebAplicationDark:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .textWebAplicationLight {
+        font-size: 1em;
+    }
+
+    .textWebAplicationDark {
+        color: white;
+        font-size: 1em;
+    }
+}
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .WebAplicationDevelopment {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .WAImgLight {
+        width: 50vw;
+        height: auto;
+        position: absolute;
+        bottom: 1vw;
+        right: auto;
+        animation: slideBottom 0.6s ease-out;
+    }
+
+    .WAImgDark {
+        width: 50vw;
         height: auto;
         position: absolute;
         bottom: 1vw;

@@ -37,7 +37,7 @@ a, a:visited {
     }
 
     .messageContactLight {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -72,7 +72,7 @@ a, a:visited {
       }
     
       .messageContactDark {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -164,7 +164,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark {
@@ -176,7 +176,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
@@ -198,7 +198,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .emailContactDark {
@@ -210,7 +210,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .lineContact {
@@ -248,7 +248,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .messageTextDark {
@@ -263,7 +263,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .containerMessage {
@@ -283,7 +283,7 @@ a, a:visited {
         justify-content: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .socialMediaDark {
@@ -294,7 +294,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .telegramLight {
@@ -382,7 +382,7 @@ a, a:visited {
     }
     
     .messageContactLight {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -417,7 +417,7 @@ a, a:visited {
       }
     
       .messageContactDark {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -509,7 +509,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark {
@@ -521,7 +521,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
@@ -543,7 +543,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .emailContactDark {
@@ -555,7 +555,7 @@ a, a:visited {
         width: 20vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .lineContact {
@@ -593,7 +593,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .messageTextDark {
@@ -608,7 +608,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .containerMessage {
@@ -626,7 +626,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .socialMediaDark {
@@ -637,7 +637,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .telegramLight {
@@ -725,7 +725,7 @@ a, a:visited {
     }
     
     .messageContactLight {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -760,7 +760,7 @@ a, a:visited {
       }
     
       .messageContactDark {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -853,7 +853,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark {
@@ -865,7 +865,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
@@ -887,7 +887,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .emailContactDark {
@@ -899,7 +899,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .lineContact {
@@ -939,7 +939,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .messageTextDark {
@@ -954,7 +954,7 @@ a, a:visited {
         width: 46vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .containerMessage {
@@ -972,7 +972,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .socialMediaDark {
@@ -983,7 +983,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .telegramLight {
@@ -1071,7 +1071,7 @@ a, a:visited {
     }
     
     .messageContactLight {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -1106,7 +1106,7 @@ a, a:visited {
       }
     
       .messageContactDark {
-        font-family: 'Niconne', cursive;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200px;
         height: 50px;
         font-size: 1.5em;
@@ -1199,7 +1199,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark {
@@ -1211,7 +1211,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .nameContactDark:focus, .nameContactLight:focus, .emailContactDark:focus, .emailContactLight:focus,
@@ -1233,7 +1233,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .emailContactDark {
@@ -1245,7 +1245,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .lineContact {
@@ -1285,7 +1285,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .messageTextDark {
@@ -1300,7 +1300,7 @@ a, a:visited {
         width: 70vw;
         font-size: var(--font-size-input);
         color: var(--color-input);
-        font-family: 'Niconne', cursive;;
+        font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     }
 
     .containerMessage {
@@ -1318,7 +1318,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .socialMediaDark {
@@ -1329,7 +1329,7 @@ a, a:visited {
         align-items: center;
         gap: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .telegramLight {

@@ -91,14 +91,14 @@ function Contact(props) {
                   {language === 'es' ? contactArrayEs.nameTitle : language === 'en' ? contactArrayEn.nameTitle : contactArrayEn.nameTitle}
                 </label>
                 <input className={issue === 'light' ? 'nameContactLight': issue === 'dark'? 'nameContactDark': 'nameContactLight'} type="text" name="user_name" 
-                placeholder={language === 'es' ? contactArrayEs.inputName : language === 'en' ? contactArrayEn.inputName : contactArrayEn.inputName}/>
+                placeholder={language === 'es' ? contactArrayEs.inputName : language === 'en' ? contactArrayEn.inputName : contactArrayEn.inputName} required/>
               </div>
               <div className="column">
                 <label>
                   {language === 'es' ? contactArrayEs.emailTitle : language === 'en' ? contactArrayEn.emailTitle : contactArrayEn.emailTitle}
                 </label>
                 <input className={issue === 'light' ? 'emailContactLight': issue === 'dark'? 'emailContactDark': 'emailContactLight'} type="email" name="user_email" 
-                placeholder={language === 'es' ? contactArrayEs.inputEmail : language === 'en' ? contactArrayEn.inputEmail : contactArrayEn.inputEmail}/>
+                placeholder={language === 'es' ? contactArrayEs.inputEmail : language === 'en' ? contactArrayEn.inputEmail : contactArrayEn.inputEmail} required/>
               </div>                            
             </div>
             <div className="containerMessage">
@@ -106,7 +106,7 @@ function Contact(props) {
                 {language === 'es' ? contactArrayEs.messageTitle : language === 'en' ? contactArrayEn.messageTitle : contactArrayEn.messageTitle}
               </label>
               <textarea name="message" className={issue === 'light' ? 'messageTextLight': issue === 'dark'? 'messageTextDark': 'messageTextLight'} 
-              placeholder={language === 'es' ? contactArrayEs.inputMessage : language === 'en' ? contactArrayEn.inputMessage : contactArrayEn.inputMessage}/>
+              placeholder={language === 'es' ? contactArrayEs.inputMessage : language === 'en' ? contactArrayEn.inputMessage : contactArrayEn.inputMessage} required/>
             </div>            
             <div className="wraper">
               <button className={issue === 'light' ? 'messageContactLight': issue === 'dark'? 'messageContactDark': 'messageContactLight'} value="send">
