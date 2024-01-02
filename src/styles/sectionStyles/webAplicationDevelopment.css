@@ -12,7 +12,7 @@
     }
 
     .WAImgLight {
-        width: 35vw;
+        width: 25vw;
         height: auto;
         position: absolute;
         right: 8vw;
@@ -20,7 +20,7 @@
     }
 
     .WAImgDark {
-        width: 35vw;
+        width: 25vw;
         height: auto;
         position: absolute;
         right: 8vw;
