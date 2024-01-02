@@ -1,5 +1,5 @@
 body {
-  font-family: 'Niconne', cursive;
+  font-family: 'Niconne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body.light::-webkit-scrollbar-track {
   background: #4287F5;

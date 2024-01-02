@@ -674,3 +674,155 @@
       border-radius: 4px;
   }
 }
+
+@media (max-width: 500px) {
+  .sunMenuSummer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonMenuLight {
+    width: 250px;
+    height: 120px;
+    position: relative;
+  }
+
+  .buttonMenuDark {
+    width: 250px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxMenuLight {
+    position: absolute;
+    width: 240px;
+    height: 80px;
+    background-color: #8db8fd;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+  }
+
+  .boxMenuDark {
+      position: absolute;
+      width: 240px;
+      height: 80px;
+      background-color: white;
+      top: 10px;
+      left: 10px;
+      z-index: 0;
+  }
+
+  .menuButtonLight {
+    border: 2px solid black;
+    width: 240px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.3s;
+    animation-name: klk;
+    animation-duration: 1s;
+    font-size: 2em;
+  }
+
+  .menuButtonDark {
+    border: 2px solid white;
+    width: 240px;
+    height: 80px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #29272a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.3s;
+    color: white;
+    animation-name: klk;
+    animation-duration: 0.7s;
+    font-size: 2em;
+  }
+
+  @keyframes klk {
+    0% {
+      color: transparent;
+    }
+    50% {
+      transform: translate(10px, 10px);
+    }
+    100% {
+      color: white;
+    }
+  }
+
+  .menuButtonLight:hover, .menuButtonDark:hover{
+    transform: translate(10px, 10px);
+  }
+
+  .menuButtonLight:focus, .menuButtonDark:focus{
+    transform: translate(10px, 10px);
+  }
+
+  .socialMediaMenuLight {
+    font-size: 3.5em;
+    margin-top: 30px;
+    color: #4287F5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .socialMediaMenuDark {
+    font-size: 3.5em;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .telegramMenuLight {
+      border: 2px solid #4287F5;
+      font-size: 1em;
+      width: 0.8em;
+      height: 0.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4287F5;
+      color: transparent;
+      border-radius: 4px;
+      color: white;
+  }
+
+  .telegramMenuDark {
+      border: 2px solid white;
+      font-size: 1em;
+      width: 0.8em;
+      height: 0.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: #29272a;
+      border-radius: 4px;
+  }
+}

@@ -124,7 +124,7 @@ function Contact(props) {
             <a className={issue === 'light' ? 'contactRedirectLight': issue === 'dark'? 'contactRedirectDark': 'contactRedirectLight'} href={twitter} target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
             <a className={issue === 'light' ? 'contactRedirectLight': issue === 'dark'? 'contactRedirectDark': 'contactRedirectLight'} href={github} target="_blank" rel="noopener noreferrer"><FaSquareGithub /></a>            
           </div>
-          <div className={issue === 'light' ? 'copyLight': issue === 'dark'? 'copyDark': 'copyLight'}><div className="copyp">©</div>&nbsp; &nbsp; Jessy Monroy 2023 - email: jessymonroydev@gmail.com</div>
+          <div className={issue === 'light' ? 'copyLight': issue === 'dark'? 'copyDark': 'copyLight'}><div className="copyp">©</div>&nbsp; &nbsp; Jessy Monroy 2023</div>
         </div>
       </div>  
     );

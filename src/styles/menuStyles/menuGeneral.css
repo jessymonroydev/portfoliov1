@@ -53,6 +53,8 @@
         left: 0;
         z-index: 40;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .menuNavLight {
@@ -247,7 +249,7 @@
     }
 }
   
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .mainModalMenuSummer {
         position: fixed;
         width: 100vw;
